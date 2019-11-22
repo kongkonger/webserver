@@ -6,15 +6,16 @@
       <el-col :span="4" style="min-height: 100%; background-color: #324057;">
         <el-menu :default-active="defaultActive" style="min-height: 100%;" router theme="dark">
           <el-menu-item index="manage">
-            <div class="el-submenu-title" style="padding-left: 20px;">
+            <div  style="padding-left: 20px;">
               <i class="el-icon-document"></i>
               首页
             </div>
           </el-menu-item>
           <el-submenu  class="submenu" index="2">
             <template slot="title">
-              <!-- <i class="el-icon-document"></i> -->
-              <p  class="inner_text">数据管理</p> 
+              <i class="el-icon-document"></i>
+              
+              <span>数据管理</span>
             </template>
             <el-menu-item index="userList">用户列表</el-menu-item>
             <el-menu-item index="shopList">商家列表</el-menu-item>
@@ -164,12 +165,12 @@ export default {
 .el-submenu{
     font-size: 30px !important;
 }
-.el-submenu__title {
-// height: 100px;
+.el-submenu__title{
+height: 100px;
 
   font-size: 30px;
    padding: 0 20px;
-     line-height: 140px;
+     line-height: 100px;
 }
 
 </style>
